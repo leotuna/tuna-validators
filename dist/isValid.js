@@ -89,7 +89,8 @@ var IsValid = /** @class */ (function () {
         var digit1 = calc(13);
         return digit1 === digits[1];
     };
-    IsValid.prototype.phone = function (value) {
+    IsValid.prototype.phone = function (value, country) {
+        throw new Error("Phone validation not implemented for this country yet.");
     };
     IsValid.prototype.fullName = function (value) {
         if (value.length < 1) {

@@ -14,6 +14,9 @@ describe('cpf', function () {
     test('invalid cpf with punctuation returns false', function () {
         expect(isValid_1.isValid.cpf('870.599.040-81')).toBe(false);
     });
+    test('all zero cpf returns false', function () {
+        expect(isValid_1.isValid.cpf('00000000000')).toBe(false);
+    });
 });
 describe('cnpj', function () {
     test('valid cnpj returns true', function () {
