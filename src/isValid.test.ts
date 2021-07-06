@@ -20,6 +20,18 @@ describe('cpf', () => {
   test('all zero cpf returns false', () => {
     expect(isValid.cpf('00000000000')).toBe(false);
   });
+
+  test('all zero cpf returns false', () => {
+    expect(isValid.cpf('11111111111')).toBe(false);
+  });
+  
+  test('all zero cpf returns false', () => {
+    expect(isValid.cpf('88888888888')).toBe(false);
+  });
+
+  test('all zero cpf returns false', () => {
+    expect(isValid.cpf('99999999999')).toBe(false);
+  });
 })
 
 describe('cnpj', () => {

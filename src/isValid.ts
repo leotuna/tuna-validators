@@ -8,8 +8,10 @@ class IsValid {
 
     value = value.replace(/\D/g, '');
 
-    if (value == '00000000000') {
-      return false;
+    for (let i = 0; i <= 9; i++) {
+      if (value == i.toString().repeat(11)) {
+        return false;
+      }
     }
 
     for (let i = 1; i <= 9; i++) {
